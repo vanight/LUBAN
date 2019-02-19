@@ -8,20 +8,18 @@ import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { LoginComponent } from "./components/login/login.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { HomeComponent } from './home/home.component';
-import { AdminComponent } from './admin/admin.component';
-
+import { HomeComponent } from "./home/home.component";
+import { AdminComponent } from "./admin/admin.component";
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'login',      component: LoginComponent },
+  { path: "", component: HomeComponent },
+  { path: "login", component: LoginComponent },
   {
-    path: 'admin',
-    component: AdminComponent,
-  },
+    path: "admin",
+    component: AdminComponent
+  }
   //{ path: '**', component: PageNotFoundComponent }
 ];
-
 
 @NgModule({
   declarations: [
@@ -32,7 +30,12 @@ const appRoutes: Routes = [
     HomeComponent,
     AdminComponent
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, MaterialModule, RouterModule.forRoot(appRoutes)],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    RouterModule.forRoot(appRoutes)
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

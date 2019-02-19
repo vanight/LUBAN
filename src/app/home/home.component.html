@@ -1,5 +1,9 @@
-<p>
-  home works!
-  <a [routerLink]="[ '/login' ]">login</a>
-  <a [routerLink]="[ '/admin' ]">admin</a>
-</p>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+      <a mat-raised-button [routerLink]="[ '/login' ]">Login</a>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+      <a mat-raised-button [routerLink]="[ '/admin' ]">Admin</a>
+  </mat-toolbar-row>
+</mat-toolbar>
