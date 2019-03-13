@@ -8,7 +8,6 @@ import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { LoginComponent } from "./components/login/login.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { HomeComponent } from "./home/home.component";
 import { AdminComponent } from "./admin/admin.component";
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule, MatTreeModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
@@ -17,7 +16,6 @@ import { TreeComponent } from './tree/tree.component';
 import { TableComponent } from './table/table.component';
 
 const appRoutes: Routes = [
-  { path: "", component: HomeComponent },
   { path: "dashboard", component: DashboardComponent },
   { path: "tree", component: TreeComponent },
   { path: "table", component: TableComponent },
@@ -36,7 +34,6 @@ const appRoutes: Routes = [
     HeaderComponent,
     FooterComponent,
     LoginComponent,
-    HomeComponent,
     AdminComponent,
     DashboardComponent,
     TreeComponent,
